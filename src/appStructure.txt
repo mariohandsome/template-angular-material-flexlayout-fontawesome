@@ -1,0 +1,26 @@
+● src
++---● app
+|   |--● components
+|   |  |--● students
+|   |     |-- students.components.ts
+|   |     |--● student
+|   |        |--● student.components.ts|.html|.scss
+|   |     |--● student-list
+|   |        |--● student.components.ts|.html|.scss
+|   |
+|   |--● services
+|   |  |--● student.service.ts
+|   |
+|   |--● models
+|   |  |--● student.model.ts
+|   |
+|   |--app-material.module.ts
+|   |
+|   |--app.routing.module.ts
+|   |
+|   |--app.module.ts
+|
++---● environments
+|   |--environment.ts
+|
+|--index.html
