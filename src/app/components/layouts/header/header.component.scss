@@ -1,0 +1,45 @@
+a {
+  text-transform: capitalize;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+.header-bottom {
+  height: 43px;
+  overflow-x: auto;
+  mask-image: -webkit-linear-gradient(to right, transparent, #000 20px, #000 90%, transparent);
+  mask-image: -moz-linear-gradient(to right, transparent, #000 20px, #000 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 20px, #000 90%, transparent);
+  -webkit-mask-image: -webkit-linear-gradient(to right, transparent, #000 20px, #000 90%, transparent);
+  -webkit-mask-image: -moz-linear-gradient(to right, transparent, #000 20px, #000 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 20px, #000 90%, transparent);
+
+  ul {
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &::-webkit-scrollbar {
+    height: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: #ff4081;
+    outline: 1px solid slategrey;
+    transition: ease-in-out .3s;
+  }
+
+  &::-webkit-scrollbar-track {
+    cursor: pointer;
+  }
+
+}

@@ -1,0 +1,40 @@
+<header>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row class="header-main">
+      <div fxFlex>
+        <div class="brand">
+          <a routerLink="/home">AngularQuiz</a>
+        </div>
+
+        <div fxFlex fxLayoutAlign="start" fxHide fxShow.gt-md>
+          <ul fxLayout>
+            <li>
+                <button mat-button><a routerLink="/home">Student</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div fxFlex fxLayoutAlign="end">
+        <ul fxLayout fxLayoutGap="15px">
+          <li fxShow fxHide.gt-md>
+              <button mat-icon-button ><a routerLink="/home"><mat-icon>person</mat-icon></a></button>
+          </li>
+          <li fxHide fxShow.gt-md>
+              <button mat-button><a routerLink="/home">Đăng nhập</a></button>
+          </li>
+          <li fxHide fxShow.gt-md>
+              <button mat-button><a routerLink="/home">Đăng kí</a></button>
+          </li>
+        </ul>
+      </div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row class="header-bottom" fxShow fxHide.gt-md>
+      <ul fxLayout >
+        <li>
+            <button mat-button><a routerLink="/home">Student</a></button>
+        </li>
+      </ul>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>

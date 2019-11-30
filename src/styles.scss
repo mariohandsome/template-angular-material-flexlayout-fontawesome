@@ -1,4 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
 
+* { margin: 0;}
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 14px;
+  &::-webkit-scrollbar {
+    width: 5px;
+    background: #3f51b5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: darken($color: #3f51b5, $amount: 15);
+    width: 20px;
+    outline: 2px solid slategrey;
+    transition: ease-in-out .3s;
+  }
+
+  &::-webkit-scrollbar-track {
+    cursor: pointer;
+  }
+
+}
+ul { list-style: none; }
+a {text-decoration: none; color: black}
+
+.no-scrollbar .mat-drawer-inner-container{
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: rgba(#909090, 0);
+    outline: 2px solid slategrey;
+    transition: ease-in-out .3s;
+  }
+
+  &::-webkit-scrollbar-track {
+    cursor: pointer;
+  }
+
+  &:hover, &:active {
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(#909090, 1);
+    }
+  }
+}
